@@ -1,11 +1,25 @@
 [package]
 name = "learnea-backend"
 version = "0.1.0"
+authors = ["sayeedkhalshi <sayeedmondal1412@gmail.com>"]
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
-axum = "0.7.5"
-tokio = { version = "1.36.0", features = ["full"] }
-tower = "0.4.13"
+actix-cors = "0.6.5"
+actix-web = "4.4.1"
+actix-web-lab = "0.20.1"
+bcrypt = "0.15.0"
+chrono = "0.4.31"
+dotenv = "0.15.0"
+env_logger = "0.10.1"
+jsonwebtoken = "9.2.0"
+juniper = "0.15.12"
+juniper-compose = "0.0.3"
+log = "0.4.20"
+serde = {version = "1.0", features = ["derive"] }
+sqlx = {version="0.7.3", features = ["runtime-tokio","sqlite","postgres"]}
+# Testing framework
+warp = "0.3.7"
+
+[dev-dependencies]
+# Dev dependencies for testing
